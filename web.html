@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://scontent.fgrx1-2.fna.fbcdn.net/v/t39.30808-6/307561554_473743268113348_2266201582027358108_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=6eZgvTnOd1gAX8f1KkE&_nc_ht=scontent.fgrx1-2.fna&oh=00_AfAKJW8bTCzBgv5dccyVxXMPuk8VYdhVRPP_sC293iUkTg&oe=65AEC7D6" type="image/png">
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css">
+  <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Hikify - Correcaminos Castell</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Hikify - Correcaminos Castell</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Rutas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="app.html">Acerca de</a>
+        </li>
+      </ul>
+      <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+        <input class="form-control me-2" type="search" name="q" placeholder="Buscar en Google" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+  <iframe style="border: solid 1px #777; align-items: center;" src="https://calendar.google.com/calendar/embed? Height=600&amp;wkst=2&amp;bgcolor=%23EF6C00&amp;ctz=UTC&amp;mode=MONTH&amp;showTz=0&amp;showCalendars=0&amp;showTabs=1&amp;showPrint=1&amp;showDate=1&amp;showNav=1&amp;showTitle=1&amp;title=Correcaminos&amp;src=OTYyMzc1MWU2OTJkNmMyNjBiYTRjN2MzOWUxOTI2YTkyMjZlNmMyNGNjNGI0MGY1ZWNiNzI3ZTZlZWUzMjUwYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F09300" width="100%" height="750" frameborder="0" scrolling="no"></iframe>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var year = new Date().getFullYear(); // Obtener el año actual
+        var copyrightParagraph = document.getElementById('copyright');
+        copyrightParagraph.innerHTML = '© ' + year + ' Hikify. Todos los derechos reservados.';
+      });
+    </script>
+    
+    <br>
+    <p>Developed by</p><a href="https://github.com/Mario-conf" target="_blank">Mario.conf</a>
+    <br>
+    <p id="copyright"></p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Avance automático cada 1 minuto (60,000 milisegundos)
+    setInterval(function () {
+      $('#carouselExample').carousel('next');
+    }, 60000);
+  </script>
+  
+</body>
+</html>
